@@ -8,7 +8,7 @@ try:
 
     print("Database 'alx_book_store' created successfully!")
 
-except error as e:
+except  mysql.connector.Error:
     print("failed to connect to database")
 
 alx_book_store.close()
